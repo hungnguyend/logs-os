@@ -3,7 +3,7 @@ FROM docker.elastic.co/logstash/logstash-oss:6.2.2
 COPY logstash.yml /usr/share/logstash/config/
 COPY logstash.conf /usr/share/logstash/pipeline/
 
-ENV ELASTICSEARCH_HOST=0.0.0.0 \
+ENV ELASTICSEARCH_HOST=easyspa-elasticsearch \
     ELASTICSEARCH_PORT=9200 \
     INPUT_TCP_PORT=5000 \
     INPUT_UDP_PORT=5000 \
